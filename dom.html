@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0, 0, 255, 0.29);
+        }
+        ul{
+            background-color: transparent;
+        list-style-type: none;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+       div{
+        
+        width: 80%;
+        max-width: 500px;
+        min-width: 300px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding:25px;
+       
+       
+       }
+       h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Outfit";
+       }
+        li{
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+        }
+        label{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-family: "Outfit";
+        }
+        input{
+            padding: 0px 10px;
+            
+        }
+        input[type="button"]{
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+        }
+        input[type="button"]:hover{
+            cursor: pointer;
+            background-color:rgba(0, 0, 255, 0.29) ;
+        }
+        i{
+            color:red;
+        }
+        footer{
+            font-family: "Outfit";
+            position: fixed;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Favourite Movie Franchise</h1>
+
+        <ul>
+            <li>The Matrix</li>
+            <li>Star Wars</li>
+            <li>Harry Potter</li>
+            <li>Lord of the Rings</li>
+            <li>Marvel</li>
+        </ul>
+    </div>
+
+    <label for="movie">Input new movie to add:</label>
+    <input type="text" id="movie">
+    <input type="button" value="Insert" onclick="insert()">
+
+    <script src="script.js">
+      
+    
+    </script>
+
+    <footer>
+       <p>Made with <i class="material-icons">favorite</i> by <a href="mailto:eniolanishe@gmail.com">Eniola Anishe</a> </p> 
+    </footer>
+</body>
+</html>
